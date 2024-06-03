@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    background-color: #E7E7E7;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #BF870A;
+    font-size: 1em;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+nav h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #BF870A;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    color: #f0c419;
+}
+
+.main .main-container{
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    padding: 50px;
+}
+
+.main-container .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2)   ;
+}
+
+.left {
+    width: 45%;
+    height: 100%;
+    padding: 20px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.left p {
+    font-size: 13px;
+    opacity: .8;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.left a {
+    color: #000;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+}
+
+.right .right-top {
+    display: flex;
+    height: 50%;
+}
+
+.right-top-left, .right-top-right, .right-bottom {
+    flex: 1;
+}
+
+.right-top-left {
+    background-image: url('./images/pineapple.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.right-top-right {
+    background-image: url('./images/pineapple-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.right-bottom {
+    background-image: url('./images/pineapple-bottom.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.second-container{
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.second-container .left{
+    width: 300px;
+    height: 300px;
+}
+
+.left img{
+    border-radius: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.second-container .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.right h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.right p{
+    padding: 0 20px;
+    line-height: 25px;
+}
+
+@media(max-width: 768px) {
+    .main .container {
+        flex-direction: column;
+    }
+
+    .left {
+        height: 45%;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .right{
+        height: 55%;
+        width: 100%;
+    }
+
+    .right .right-top {
+        flex-direction: row;
+    }
+
+    .right-top-left, .right-top-right, .right-bottom {
+        width: 100%;
+    }
+
+    .second-container .left{
+        width: 250px;
+        height: 250px;
+    }
+}
